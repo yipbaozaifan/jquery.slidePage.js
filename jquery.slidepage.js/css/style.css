@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+}
+/*************/
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    padding: 0;
+}
+h3{
+    margin: 0;
+}
+.container,.sections,.section{
+    position: relative;/*相对定位才可以改变其坐标*/
+    height: 100%;
+}
+.sections{
+    width: 100%;
+}
+.sections .section{
+    width: 100%;
+}
+#section1,
+#section2,
+#section3,
+#section4{
+    background-color: #000;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+    color: #ffffff;
+}
+#section1{
+    background-image: url(../img/sec1.JPG);
+}
+#section2{
+    background-image: url(../img/sec2.JPG);
+}
+#section3{
+    background-image: url(../img/sec3.JPG);
+}
+#section4{
+    background-image: url(../img/sec4.JPG);
+}
+/*分页导航*/
+.pages{
+    position: fixed;
+    list-style: none;
+}
+.vertical{
+    top: 50%;
+    right: 10px;
+}
+.horizontal{
+    bottom: 10px;
+    left: 50%;
+}
+.pages li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #eee;
+    margin: 15px 0 0 7px;
+}
+.pages .active {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    margin-left: 4px;
+}
